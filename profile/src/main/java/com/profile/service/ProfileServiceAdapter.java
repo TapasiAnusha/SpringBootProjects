@@ -18,4 +18,10 @@ public class ProfileServiceAdapter implements ProfileService{
         return profileRepository.findById(id).orElse(null);
     }
 
+    @Override
+    public void deleteProfile(int id) {
+         profileRepository.deleteById(id);
+    }
+
+
 }

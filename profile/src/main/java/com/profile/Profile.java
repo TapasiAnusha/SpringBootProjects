@@ -19,7 +19,7 @@ public class Profile {
     String name;
     int age;
     @OneToOne(cascade = CascadeType.ALL)
-            @JoinColumn(referencedColumnName = "id:",name = "pa_fk")
+            @JoinColumn(referencedColumnName = "id",name = "pa_fk")
 Address pAddress;
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(referencedColumnName = "id",name = "wa_fk")

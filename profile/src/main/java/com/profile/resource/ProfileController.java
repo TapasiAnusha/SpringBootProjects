@@ -18,4 +18,8 @@ public class ProfileController {
     public Profile getProfile(@PathVariable int id){
         return profileServiceAdapter.getProfile(id);
     }
+    @DeleteMapping("/{id}")
+    public void deleteProfile(@PathVariable int id){
+        profileServiceAdapter.deleteProfile(id);
+    }
 }
