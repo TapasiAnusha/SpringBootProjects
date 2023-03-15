@@ -19,5 +19,8 @@ public class EvenNumbers {
                 .filter(n -> n.contains("u"))
                 .collect(Collectors.toList());
         System.out.println(s);
+        i.stream()
+                .filter(n->n%2==0)
+                .forEach(n->System.out.println(n));
     }
 }

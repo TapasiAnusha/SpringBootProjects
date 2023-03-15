@@ -8,7 +8,6 @@ class ProfileServiceAdapterTest {
 
     @Test
     void saveProfile() {
-
     }
 
     @Test
